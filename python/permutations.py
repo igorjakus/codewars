@@ -10,5 +10,7 @@ permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 The order of the permutations doesn't matter."""
 
 
+import itertools
+
 def permutations(s):
-    return map(''.join, set(permutations(s)))
+    return map(''.join, set(itertools.permutations(s)))
